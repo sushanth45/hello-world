@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flashsbk
+  labels:
+    app: hello
+spec:
+  selector:
+    matchLabels:
+      app: hello
+      
+  template:
+    metadata:
+      labels:
+        app: hello
+     
+    spec:
+      containers:
+      - name: flashsbk
+        image: us.gcr.io/kubernetes-sbk/flashsbk
+        ports:
+        - containerPort: 5000
