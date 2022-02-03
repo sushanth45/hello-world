@@ -1,5 +1,5 @@
   {
     "Service": "us-east1-an-edge",
     "Image": "hello",
-    "Tag": ""
+    "Tag": "master-1"
   }
